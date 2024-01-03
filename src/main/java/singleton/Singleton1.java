@@ -2,7 +2,7 @@ package singleton;
 
 /**
  * @author Qiu Tao
- * @description: 1. 懒汉式
+ * @description: 1. 饿汉式
  * @date 2024/1/3 0:07
  */
 public class Singleton1 {
