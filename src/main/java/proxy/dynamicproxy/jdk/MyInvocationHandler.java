@@ -17,9 +17,9 @@ public class MyInvocationHandler implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        System.out.println("动态代理之前处理");
-        method.invoke(target, args);
-        System.out.println("动态代理之后处理");
-        return null;
+        System.out.println("jdk动态代理之前处理");
+        Object result = method.invoke(target, args);
+        System.out.println("jdk动态代理之后处理");
+        return result;
     }
 }
